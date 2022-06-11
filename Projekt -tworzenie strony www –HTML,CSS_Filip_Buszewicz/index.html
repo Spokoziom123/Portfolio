@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio">
+	<meta name="keywords" content="Portfolio, Programista, Python, C, Cpp, C++, Gimp, Github, HTML, CSS">
+	<meta name="author" content="Filip Buszewicz">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/icon.svg" />
+	<script type='text/javascript' src="script.js"></script>
+	<script src="https://kit.fontawesome.com/751b7de8e8.js" crossorigin="anonymous"></script>
+	<title>Portfolio</title>
+</head>
+
+<body class="index">
+	<!--Nawigacja-->
+	<nav>
+		<div class="left_nav" id="anchor">
+			<a href="#about_me"><i class="fa-solid fa-user"></i>O mnie</a>
+			<a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i>Moje specjalizacje</a>
+		</div>
+		<div class="right_nav">
+			<a href="#contact"><i class="fa-solid fa-address-book"></i>Kontakt</a>
+		</div>
+	</nav>
+	<!--Nagłówek-->
+	<header>
+		<h1>Filip Buszewicz</h1>
+		<h2>"90% of what is considered "impossible" is, in fact, possible. The other 10% will become possible with the passage of time & technology."</h2>
+		<h3>~Hideo Kojima</h3>
+	</header>
+    <img src="images/wave_about_me_up.svg" class="fix">
+    <section>
+        <div class="side_bar">
+			<ul class="bar">
+                <li class = "bar_item">
+                    <a href="#anchor" class = "bar_link"><i class="fa-solid fa-angles-up"></i>
+                        <p class = "link_text">Do&nbsp;góry</p>
+                    </a>
+                </li>
+                <li class = "bar_item">
+                    <a href="#about_me" class = "bar_link"><i class="fa-solid fa-user"></i>
+                        <p class = "link_text">O&nbsp;mnie</p>
+                    </a>
+                </li>
+                <li class = "bar_item">
+                    <a href="#skills" class = "bar_link"><i class="fa-solid fa-screwdriver-wrench"></i></i>
+                        <p class = "link_text">Umiejentnosci</p>
+                    </a>
+                </li>
+                <li class = "bar_item">
+                    <a href="#contact" class = "bar_link"><i class="fa-solid fa-address-book"></i>
+                        <p class = "link_text">Kontakt</p>
+                    </a>
+                </li>
+                <li class = "bar_item">
+                    <a href="#" class = "bar_link"><i class="fa-solid fa-cloud-moon"></i>
+                        <p class = "link_text">Motyw</p>
+                    </a>
+                </li>
+            </ul>
+		    </div>
+        </div>
+	<main>
+			<!--O mnie-->
+			<div class="about_me" id="about_me">
+				<h1>O mnie</h1>
+				<p>Od najmłodszych lat interesowałem się elektroniką oraz naukami ścisłymi wieku 6 lat rozkręcałem domowe komputery, oraz grzebałem w układach scalonych, za co byłem ganiany.</p>
+				<p>Pojawiła się wtedy pasja do gier komputerowych oraz software-u jednak później większość czasu w moim życiu zajął sport, oraz nauka w szkole jednak w ostatnich klasach szkoły podstawowej mimo kierunku obranego na inne przedmioty wróciłem do korzeni.<p>Co prawda mam mały bagaż doświadczeń jednak jak na rok nauki programowania mogę zaskoczyć.</p>
+			</div>
+			<img src="images/wave_about_me_down.svg">
+			<!--Umiejętonści-->
+			<img src="images/wave_skills_up.svg" class="fix">
+			<div class="skills" id="skills">
+				<h1>Moje umiejentnosci</h1>
+				<h2>Języki Programowania</h3>
+					<dic class="programming_languages">
+						<div class="python">
+							<img src="images/python.svg" alt = "Python">
+							<p>Python, czyli wysoko poziomowy interpretowany język programowanie jest moją najmocniejszą stroną. Znam język od strony proceduralnej/funkcyjnej, jaki i obiektowej. Tworzę w nim programy matematyczne, Gry oraz sztuczną inteligencję.Znam takie podstawowe biblioteki jak: math, time, os, random oraz Umiem wykorzystywać biblioteki: tkinter, Matplotlib, NumPy, turtle, pygame czy pandas. Gdzieniegdzie zahaczyłem o takie biblioteki jak NEAT czy PyTorch. </p>
+						</div>
+						<div class="cpp_c">
+							<img src="images/c.svg" alt = "C++">
+							<p>C i C++ czyli kompilowane nisko poziomowe języki programowania. Znam obydwa języki od strony funkcyjnej zaś c++ także od strony obiektowej. Wykorzystywałem je do tworzenia głównie programów matematycznych. znam także zakres podstawowych bibliotek takich jak: cstdlib, time, cstudio, math czy float. </p>
+						</div>
+					</dic>
+					<h2>Inne specjalizacje</h2>
+					<div class="other_skills">
+						<div class="html_css">
+							<img src="images/html_css.svg" alt = "html css">
+							<p>HTML, czyli język znacznikowy oraz CSS, czyli kaskadowe arkusze stylów ich znajomość staram przedstawić na mojej stronie jednak są także żeczy, których nie wszystko da się wyeksponować. Oprócz flexboxa potrafię wykorzystywać grida oraz floaty. Gdzieniegdzie zdobyłem też trochę wiedzy o scss-ie oraz bootstrapie. </p>
+						</div>
+						<div class="gimp">
+							<img src="images/gimp.svg" alt = "Gimp">
+							<p>Gimp, czyli program do edycji grafiki rastrowej, potrafię obsługiwać program oraz edytować, jak i tworzyć grafiki. </p>
+						</div>
+						<div class="github">
+							<img src="images/github.svg" alt = "Github">
+							<p>Github, czyli portal do tworzenia resporzytoriów. Na nim w resporzytoriach prezentuje przykładowe programy napisane przeze mnie. </p>
+						</div>
+					</div>
+			</div>
+			<img src="images/wave_skills_down.svg">
+			<img src="images/wave_contact_up.svg" class="fix">
+			<!--Kontakt-->
+			<div class="contact" id="contact">
+				<h1>Kontakt</h1>
+				<div class="list">
+					<div class="left_list">
+						<ul type="none">
+							<li>
+								<i class="fa-solid fa-at"></i>E-mail:<br> Filip.Buszewicz01@gmail.com </li>
+							<li>
+								<i class="fa-brands fa-github"></i>Github:<br> spokoziomek123 </li>
+						</ul>
+					</div>
+					<div class="right_list">
+						<ul type="none">
+							<li>
+								<i class="fa-brands fa-twitter"></i>Twitter:<br> @Busza_code </li>
+							<li>
+								<i class="fa-brands fa-discord"></i>Discord:<br> Busza#5211 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="text">
+					<p>Jeżeli chcesz się ze mną stkontaktować wypełnij</p>
+					<p><a href="formularz.html">Formularz</a></p>
+				</div>
+			</div>
+			<img src="images/wave_contact_down.svg">
+			<img src="images/wave_footer.svg" class="fix">
+			<!--stopka-->
+			<footer>
+				<div class="info">
+					<div class="info_left">
+						<p><span>Autor:</span> Filip Buszewicz</p>
+						<p><span>Szkoła:</span> Techinkum komunikacji im. Hipolita Cegielskiego</p>
+					</div>
+					<div class="info_right">
+						<p>Jeżeli jesteś zainteresowany zapraszam do wypełnienia <a href="ankieta.html">ankiety</a></p>
+					</div>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8674.325020748716!2d16.931834340164492!3d52.403955969741105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4748ce4d9c757b57!2sZesp%C3%B3%C5%82%20Szk%C3%B3%C5%82%20Komunikacji%20im.%20Hipolita%20Cegielskiego!5e0!3m2!1spl!2spl!4v1651763865622!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<p>2022</p>
+			</footer>
+		</main>
+        </section>
+</body>
+
+</html>

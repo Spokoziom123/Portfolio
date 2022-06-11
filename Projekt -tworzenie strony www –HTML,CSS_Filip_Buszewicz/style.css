@@ -1,0 +1,628 @@
+:root{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    --text: #fff;
+}
+::placeholder, ::-ms-input-placeholder {
+    color: white;
+}
+body{
+    color: var(--text); 
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: przejscie 1s ease-in-out;
+}
+body::-webkit-scrollbar{
+    width: 0.6rem;
+}
+body::-webkit-scrollbar-thumb{
+    background: #54991f;
+    border-radius: 5px;
+    
+}
+body::-webkit-scrollbar-track{
+    background: #000;
+}
+body *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+}
+main, nav, header{
+    padding-left: 5rem;
+}
+/*boczna nawigacja*/
+.side_bar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background: #c73e1d;
+    top: 0;
+    transition: width 200ms ease;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+    border-bottom: white 1px solid;
+    padding: 0.8rem;
+    z-index: 99;
+}
+.bar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+}
+.bar_item:last-child{
+    margin-top: 40vh;
+}
+.bar img{
+    width: 50px;
+    height: 50px;
+}
+.bar_link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #e4c3ad;
+    text-decoration: none;
+}
+.link_text{
+    display: none;
+    font-size: 3rem;
+}
+.bar_link i{
+    font-size: 2rem;
+    margin-left: 0.6rem;
+}
+.side_bar:hover{
+    width: 20rem;
+}
+ 
+.side_bar:hover .link_text{
+    display: block;
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+nav {
+    justify-content: space-between;
+}
+
+nav * {
+    margin: 5px;
+}
+
+nav a {
+    padding: 8px;
+    font-size: 2rem;
+    color: #ffeabe;
+}
+
+nav * {
+    text-decoration: none;
+}
+
+.bar_link:hover{
+    background-color: #795794;
+    color: #57948B;
+    border-radius: 5px;
+
+}
+
+nav a:hover,
+.bar a:hover {
+    border-bottom: #ffeabe 1px solid;
+}
+
+nav,
+header,
+.info {
+    display: flex;
+}
+
+nav i {
+    font-size: 2rem;
+}
+
+/*ogólne*/
+.ankieta {
+    background-image: url(images/tło_ankieta.jpg);
+}
+
+.formularz {
+    background-image: url(images/tło_formularz.jpg);
+}
+
+.index {
+    background-image: url(images/tło_główne.jpg);
+}
+
+@keyframes animacja {
+    0%,
+    100% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+}
+
+@keyframes przejscie {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.fix{
+    position: relative;
+    top: 5px;
+}
+
+
+p,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    height: auto;
+    display: flex;
+}
+
+/*nawigacja*/
+nav * {
+    text-decoration: none;
+}
+
+/*nagłówek*/
+header {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+header h1,
+header h2,
+header h3 {
+    animation: animacja 6s ease-in-out infinite;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    
+}
+header h1{
+    font-weight: 300;
+}
+header h2{
+    font-weight: 300;
+    font-style: italic;
+}
+header h3{
+    font-weight: 200;
+    font-style: oblique;
+}
+/*główna sekcja*/
+main h1,
+main h2 {
+    color: #fff;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-weight: 300;
+}
+
+/*o mnie*/
+.about_me {
+    background-color: #1f1e33;
+}
+
+/*specjalizacje*/
+.python,
+.gimp,
+.html_css,
+.cpp_c,
+.github {
+    border-bottom: #fff 2px dashed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.skills img{
+    height: 300px;
+    width: 300px;
+}
+.skills h2{
+    padding-top: 3rem;
+}
+.skills {
+    background-color: #5465ff;
+    height: auto;
+}
+
+/*kontakt*/
+.contact {
+    height: auto;
+    background-color: #0a8754;
+    font-size: 3rem;
+    text-align: center;
+}
+.contact a, footer a{
+    background-color: #c73e1d;
+    text-decoration: none;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    padding: 2px;
+}
+.contact a:hover, footer a:hover{
+    background-color: #eb502a;
+    color: #ffeabe;
+}
+.left_contact,
+.right_contact {
+    width: 50%;
+}
+span{
+    font-weight: 700;
+}
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info_left{
+    border-right: 1px #fff solid;
+}
+.info_right{
+    border-left: 1px #fff solid;
+    padding-left: 20px;
+}
+/*stopka*/
+footer {
+    display: flex;
+    flex-flow: column;
+    background-color: #000;
+
+    font-size: 2rem;
+    align-items: center;
+}
+.info{
+    padding: 2rem;
+}
+.contact_form, .survey{
+    display: flex;
+    background-color: #57948B;
+    padding-top: 10vh;
+}
+.survey{
+    background-color: #54991f;
+}
+.contact_form h2, .survey h2{
+    font-size: 3rem;
+}
+.survey h3{
+    text-align: center;
+    font-weight: 300;
+}
+form input, .contact_form textarea{
+    background-color: #57948B;
+    border: none;
+    border-bottom: gray 2px solid;
+    color: #FFF;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+form input[type="submit"]{
+    background-color: #c73e1d;
+    text-decoration: none;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    padding: 2px;
+    width: auto;
+    margin-left: 100px;
+}
+form input[type="submit"]:hover{
+    background-color: #eb502a;
+    color: #ffeabe;
+}
+.survey input{
+    background-color: #54991f;
+    width: 30vw;
+}
+.contact_form input:active{
+    border: none;
+}
+.contact_form p, .survey p{
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: 700;
+}
+.form_right, .survey_right{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.form_left, .sruvey_left{
+    width: 50%;
+}
+@media only screen and (min-width: 1080px) {
+    header h1, .skills h1{
+        font-size: 4.5rem;
+    }
+    header h2, .skills h2{
+        font-size: 2.5rem;
+    }
+    header h3, .skills h3{
+        font-size: 2rem;
+    }
+    header{
+        height: 50vh;
+    }
+    .about_me{
+        padding: 2rem;
+        font-size: 2.5rem;
+        height: 100vh;
+    }
+    .about_me p{
+        margin: 10px 0 10px 0;
+    }
+    .about_me h1{
+        margin-bottom: 20px;
+        font-size: 5rem;
+        font-weight: 400;
+    }
+    .info {
+        border-left: 1px solid #fff;
+    }
+    .skills img {
+        margin: 20px;
+    }
+    .skills p {
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        padding: 10px;
+    }
+    footer {
+        height: auto;
+        display: flex;
+    }
+    .contact li{
+        padding: 2rem;
+        text-align: center;
+    }
+    .left_list{
+        margin-right: 50px;
+    }
+    .contact{
+        height: 100vh;
+    }
+    #theme{
+        margin-top: 75vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1079px) {
+    .index,
+    .formularz,
+    .ankieta {
+        background-image: url(images/phone_background.svg);
+        max-width: 100%;
+    }
+    header, main, nav{
+        margin: 0;
+        padding: 0;
+    }
+    header h1, .skills h1{
+        font-size: 2rem;
+    }
+    header h2, .skills h2{
+        font-size: 2.5rem;
+    }
+    header h3, .skills h3{
+        font-size: 2rem;
+    }
+    header{
+        height: 50vh;
+    }
+    .about_me{
+        padding: 1rem;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    .contact{
+        width: 100vw;
+    }
+    .skills{
+        width: 100vw;
+        font-size: 2rem;
+    }
+    .info {
+        border-left: 1px solid #fff;
+    }
+    .skills img {
+        margin: 20px;
+    }
+    .skills p {
+        font-size: em;
+        letter-spacing: 0.05em;
+        padding: 10px;
+    }
+    footer {
+        height: auto;
+        display: flex;
+    }
+    .contact *{
+        padding: 2rem;
+    }
+    .side_bar{
+        display: none;
+    }
+    .list {
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+    }
+    .python,
+    .cpp_c,
+    .html_css,
+    .gimp,
+    .github {
+        display: flex;
+        flex-flow: column;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .index,
+    .formularz,
+    .ankieta {
+        background-image: url(images/phone_background.svg);
+    }
+    header, main, nav{
+        margin: 0;
+        padding: 0;
+    }
+    .side_bar{
+        display: none;
+    }
+    .about_me {
+        height: 100vh;
+        font-size: 10px;
+        width: 100vw;
+    }
+    .skills{
+        width: 100vw;
+    }
+     
+    .list {
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+    }
+    .contact{
+        
+        font-size: 12px;
+    }
+
+    .skills img {
+        margin: 20px;
+    }
+
+    .skills p {
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        padding: 10px;
+    }
+
+    .skills h1 {
+        font-size: 2.5em;
+    }
+
+    .python,
+    .cpp_c,
+    .html_css,
+    .gimp,
+    .github {
+        display: flex;
+        flex-flow: column;
+        height: auto;
+    }
+     
+    footer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    header{
+        max-height: 400px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h1,
+    header h2,
+    header h3 {
+        margin: 15px 40px 10px;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    header h3 {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main h1 {
+        padding: 20px;
+        font-size: 2em;
+        font-size: 4em;
+    }
+
+    main h2 {
+        padding: 20px;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav * {
+        margin: 5px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    nav i {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 2em;
+        padding: 20px;
+        font-weight: 400;
+    }
+
+        
+}
